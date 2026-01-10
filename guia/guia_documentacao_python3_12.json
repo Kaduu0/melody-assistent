@@ -1,0 +1,425 @@
+{
+  "titulo": "Guia Completo Python 3.12",
+  "versao": "3.12",
+  "categorias": {
+    "basico": {
+      "descricao": "Conceitos básicos e sintaxe fundamental",
+      "comandos": {
+        "print": {
+          "descricao": "Exibe texto na tela",
+          "exemplos": [
+            "print('Hello World') - exibe texto simples",
+            "print(f'Valor: {variavel}') - f-string com variável",
+            "print('Linha1', 'Linha2', sep='\\n') - múltiplas linhas"
+          ]
+        },
+        "input": {
+          "descricao": "Recebe entrada do usuário",
+          "exemplos": [
+            "nome = input('Digite seu nome: ') - lê string",
+            "idade = int(input('Idade: ')) - converte para inteiro",
+            "valor = float(input('Valor: ')) - converte para decimal"
+          ]
+        },
+        "variavel": {
+          "descricao": "Declaração e tipos de variáveis",
+          "exemplos": [
+            "nome = 'Melody' - string",
+            "idade = 25 - inteiro",
+            "altura = 1.75 - float",
+            "ativo = True - boolean",
+            "lista = [1, 2, 3] - lista",
+            "dicionario = {'chave': 'valor'} - dicionário"
+          ]
+        },
+        "comentario": {
+          "descricao": "Comentários no código",
+          "exemplos": [
+            "# Comentário de uma linha",
+            "'''Comentário de múltiplas linhas'''",
+            "\"\"\"Docstring de função ou classe\"\"\""
+          ]
+        }
+      }
+    },
+    "estruturas_controle": {
+      "descricao": "Estruturas condicionais e loops",
+      "comandos": {
+        "if": {
+          "descricao": "Condicional if/elif/else",
+          "exemplos": [
+            "if x > 0:\\n    print('Positivo')",
+            "if x > 0:\\n    print('Positivo')\\nelif x < 0:\\n    print('Negativo')\\nelse:\\n    print('Zero')",
+            "resultado = 'Par' if x % 2 == 0 else 'Ímpar' - operador ternário"
+          ]
+        },
+        "for": {
+          "descricao": "Loop for para iteração",
+          "exemplos": [
+            "for i in range(5):\\n    print(i) - itera de 0 a 4",
+            "for item in lista:\\n    print(item) - itera sobre lista",
+            "for i, valor in enumerate(lista):\\n    print(f'{i}: {valor}') - com índice",
+            "for chave, valor in dicionario.items():\\n    print(f'{chave}: {valor}') - itera dicionário"
+          ]
+        },
+        "while": {
+          "descricao": "Loop while condicional",
+          "exemplos": [
+            "while x < 10:\\n    x += 1 - loop básico",
+            "while True:\\n    if condicao:\\n        break - loop infinito com break",
+            "while x < 10:\\n    if x == 5:\\n        continue\\n    print(x) - skip com continue"
+          ]
+        },
+        "match": {
+          "descricao": "Pattern matching (novo no Python 3.10+)",
+          "exemplos": [
+            "match valor:\\n    case 1:\\n        print('Um')\\n    case 2:\\n        print('Dois')\\n    case _:\\n        print('Outro')",
+            "match ponto:\\n    case (0, 0):\\n        print('Origem')\\n    case (x, 0):\\n        print(f'Eixo X: {x}')\\n    case (0, y):\\n        print(f'Eixo Y: {y}')"
+          ]
+        }
+      }
+    },
+    "funcoes": {
+      "descricao": "Definição e uso de funções",
+      "comandos": {
+        "def": {
+          "descricao": "Define uma função",
+          "exemplos": [
+            "def saudacao(nome):\\n    return f'Olá, {nome}!'",
+            "def soma(a, b=0):\\n    return a + b - com valor padrão",
+            "def multi_return():\\n    return 1, 2, 3 - retorna múltiplos valores",
+            "def varargs(*args, **kwargs):\\n    print(args, kwargs) - argumentos variáveis"
+          ]
+        },
+        "lambda": {
+          "descricao": "Função anônima lambda",
+          "exemplos": [
+            "quadrado = lambda x: x**2",
+            "soma = lambda a, b: a + b",
+            "sorted(lista, key=lambda x: x['idade']) - como argumento"
+          ]
+        },
+        "decorador": {
+          "descricao": "Decoradores de função",
+          "exemplos": [
+            "@staticmethod\\ndef funcao():\\n    pass - método estático",
+            "@property\\ndef valor(self):\\n    return self._valor - property",
+            "def meu_decorador(func):\\n    def wrapper():\\n        print('Antes')\\n        func()\\n        print('Depois')\\n    return wrapper"
+          ]
+        }
+      }
+    },
+    "listas": {
+      "descricao": "Operações com listas",
+      "comandos": {
+        "list": {
+          "descricao": "Criação e manipulação de listas",
+          "exemplos": [
+            "lista = [1, 2, 3, 4, 5]",
+            "lista.append(6) - adiciona no final",
+            "lista.insert(0, 0) - insere na posição",
+            "lista.remove(3) - remove primeiro valor 3",
+            "lista.pop() - remove e retorna último",
+            "lista[1:3] - fatiamento (slice)",
+            "[x*2 for x in lista] - list comprehension",
+            "[x for x in lista if x > 2] - comprehension com filtro"
+          ]
+        },
+        "sort": {
+          "descricao": "Ordenação de listas",
+          "exemplos": [
+            "lista.sort() - ordena in-place",
+            "lista.sort(reverse=True) - ordem decrescente",
+            "sorted(lista) - retorna nova lista ordenada",
+            "lista.sort(key=lambda x: x['nome']) - ordena por chave"
+          ]
+        }
+      }
+    },
+    "dicionarios": {
+      "descricao": "Operações com dicionários",
+      "comandos": {
+        "dict": {
+          "descricao": "Criação e manipulação de dicionários",
+          "exemplos": [
+            "d = {'nome': 'Melody', 'idade': 25}",
+            "d['cidade'] = 'São Paulo' - adiciona chave",
+            "d.get('nome', 'Padrão') - busca com valor padrão",
+            "d.keys() - retorna chaves",
+            "d.values() - retorna valores",
+            "d.items() - retorna pares (chave, valor)",
+            "{k: v*2 for k, v in d.items()} - dict comprehension"
+          ]
+        },
+        "update": {
+          "descricao": "Atualizar dicionário",
+          "exemplos": [
+            "d1.update(d2) - merge de dicionários",
+            "d = {**d1, **d2} - merge com unpacking (Python 3.5+)",
+            "d | d2 - merge com operador | (Python 3.9+)"
+          ]
+        }
+      }
+    },
+    "strings": {
+      "descricao": "Manipulação de strings",
+      "comandos": {
+        "string": {
+          "descricao": "Operações com strings",
+          "exemplos": [
+            "texto.upper() - maiúsculas",
+            "texto.lower() - minúsculas",
+            "texto.strip() - remove espaços nas pontas",
+            "texto.split(',') - divide em lista",
+            "'-'.join(lista) - junta lista em string",
+            "texto.replace('a', 'b') - substitui caracteres",
+            "f'Valor: {valor:.2f}' - f-string formatada",
+            "'texto' in string - verifica substring"
+          ]
+        },
+        "format": {
+          "descricao": "Formatação de strings",
+          "exemplos": [
+            "'{} {}'.format('Hello', 'World')",
+            "'{nome} tem {idade} anos'.format(nome='Ana', idade=25)",
+            "f'{valor:.2f}' - 2 casas decimais",
+            "f'{numero:05d}' - preenche com zeros",
+            "f'{texto:>10}' - alinha à direita (10 chars)"
+          ]
+        }
+      }
+    },
+    "arquivos": {
+      "descricao": "Leitura e escrita de arquivos",
+      "comandos": {
+        "open": {
+          "descricao": "Abre arquivo para leitura/escrita",
+          "exemplos": [
+            "with open('arquivo.txt', 'r') as f:\\n    conteudo = f.read() - lê tudo",
+            "with open('arquivo.txt', 'w') as f:\\n    f.write('texto') - escreve (sobrescreve)",
+            "with open('arquivo.txt', 'a') as f:\\n    f.write('texto') - append",
+            "with open('arquivo.txt', 'r') as f:\\n    linhas = f.readlines() - lê linhas"
+          ]
+        },
+        "json": {
+          "descricao": "Trabalhar com arquivos JSON",
+          "exemplos": [
+            "import json",
+            "with open('data.json', 'r') as f:\\n    dados = json.load(f) - carrega JSON",
+            "with open('data.json', 'w') as f:\\n    json.dump(dados, f, indent=2) - salva JSON",
+            "json_string = json.dumps(dados) - converte para string",
+            "dados = json.loads(json_string) - converte de string"
+          ]
+        },
+        "csv": {
+          "descricao": "Trabalhar com arquivos CSV",
+          "exemplos": [
+            "import csv",
+            "with open('dados.csv', 'r') as f:\\n    leitor = csv.reader(f)\\n    for linha in leitor:\\n        print(linha)",
+            "with open('dados.csv', 'w') as f:\\n    escritor = csv.writer(f)\\n    escritor.writerow(['coluna1', 'coluna2'])"
+          ]
+        }
+      }
+    },
+    "excecoes": {
+      "descricao": "Tratamento de exceções e erros",
+      "comandos": {
+        "try": {
+          "descricao": "Bloco try/except para tratar erros",
+          "exemplos": [
+            "try:\\n    resultado = 10 / 0\\nexcept ZeroDivisionError:\\n    print('Erro: divisão por zero')",
+            "try:\\n    arquivo = open('nao_existe.txt')\\nexcept FileNotFoundError as e:\\n    print(f'Erro: {e}')",
+            "try:\\n    codigo()\\nexcept Exception as e:\\n    print(f'Erro: {e}')\\nfinally:\\n    print('Sempre executa')"
+          ]
+        },
+        "raise": {
+          "descricao": "Lançar exceções",
+          "exemplos": [
+            "raise ValueError('Valor inválido')",
+            "raise TypeError('Tipo incorreto')",
+            "if x < 0:\\n    raise ValueError('x deve ser positivo')"
+          ]
+        }
+      }
+    },
+    "classes": {
+      "descricao": "Programação Orientada a Objetos",
+      "comandos": {
+        "class": {
+          "descricao": "Definição de classes",
+          "exemplos": [
+            "class Pessoa:\\n    def __init__(self, nome):\\n        self.nome = nome\\n    def falar(self):\\n        print(f'Olá, sou {self.nome}')",
+            "class Estudante(Pessoa):\\n    def __init__(self, nome, curso):\\n        super().__init__(nome)\\n        self.curso = curso - herança",
+            "@dataclass\\nclass Ponto:\\n    x: int\\n    y: int - dataclass (Python 3.7+)"
+          ]
+        },
+        "metodos_especiais": {
+          "descricao": "Métodos especiais (dunder methods)",
+          "exemplos": [
+            "__init__(self) - construtor",
+            "__str__(self) - representação em string",
+            "__repr__(self) - representação oficial",
+            "__len__(self) - tamanho do objeto",
+            "__getitem__(self, key) - acesso por índice",
+            "__add__(self, other) - sobrecarga do operador +"
+          ]
+        }
+      }
+    },
+    "modulos": {
+      "descricao": "Importação e uso de módulos",
+      "comandos": {
+        "import": {
+          "descricao": "Importar módulos",
+          "exemplos": [
+            "import math - importa módulo completo",
+            "from math import sqrt, pi - importa funções específicas",
+            "import numpy as np - importa com alias",
+            "from modulo import * - importa tudo (não recomendado)"
+          ]
+        },
+        "modulos_uteis": {
+          "descricao": "Módulos úteis da biblioteca padrão",
+          "exemplos": [
+            "import os - operações de sistema",
+            "import sys - parâmetros do sistema",
+            "import datetime - trabalhar com datas",
+            "import random - números aleatórios",
+            "import re - expressões regulares",
+            "import pathlib - caminhos de arquivos",
+            "import subprocess - executar comandos",
+            "import json - trabalhar com JSON"
+          ]
+        }
+      }
+    },
+    "comprehensions": {
+      "descricao": "Comprehensions e geradores",
+      "comandos": {
+        "list_comprehension": {
+          "descricao": "List comprehension",
+          "exemplos": [
+            "[x**2 for x in range(10)] - quadrados de 0 a 9",
+            "[x for x in range(20) if x % 2 == 0] - pares de 0 a 19",
+            "[[i+j for j in range(3)] for i in range(3)] - nested comprehension",
+            "[x.upper() for x in palavras if len(x) > 3] - com condição"
+          ]
+        },
+        "dict_comprehension": {
+          "descricao": "Dictionary comprehension",
+          "exemplos": [
+            "{x: x**2 for x in range(5)} - dicionário de quadrados",
+            "{k: v.upper() for k, v in dict.items() if len(v) > 3} - com filtro"
+          ]
+        },
+        "set_comprehension": {
+          "descricao": "Set comprehension",
+          "exemplos": [
+            "{x**2 for x in range(10)} - set de quadrados",
+            "{x for x in lista if x > 0} - set com filtro"
+          ]
+        },
+        "generator": {
+          "descricao": "Generator expressions",
+          "exemplos": [
+            "gen = (x**2 for x in range(1000000)) - generator (economiza memória)",
+            "def fibonacci():\\n    a, b = 0, 1\\n    while True:\\n        yield a\\n        a, b = b, a + b - generator function"
+          ]
+        }
+      }
+    },
+    "funcoes_builtin": {
+      "descricao": "Funções built-in úteis",
+      "comandos": {
+        "map_filter_reduce": {
+          "descricao": "Funções de mapeamento e filtragem",
+          "exemplos": [
+            "list(map(lambda x: x*2, [1,2,3])) - aplica função a cada elemento",
+            "list(filter(lambda x: x > 0, [-1, 0, 1, 2])) - filtra elementos",
+            "from functools import reduce\\nreduce(lambda a, b: a+b, [1,2,3,4]) - reduz a um valor"
+          ]
+        },
+        "zip_enumerate": {
+          "descricao": "Funções de iteração",
+          "exemplos": [
+            "list(zip([1,2,3], ['a','b','c'])) - combina listas",
+            "for i, valor in enumerate(['a','b','c']):\\n    print(i, valor) - itera com índice",
+            "dict(zip(chaves, valores)) - cria dicionário"
+          ]
+        },
+        "any_all": {
+          "descricao": "Verificações booleanas",
+          "exemplos": [
+            "any([False, True, False]) - retorna True se algum for True",
+            "all([True, True, True]) - retorna True se todos forem True",
+            "any(x > 5 for x in lista) - verifica condição"
+          ]
+        },
+        "conversao": {
+          "descricao": "Funções de conversão de tipo",
+          "exemplos": [
+            "int('42') - converte para inteiro",
+            "float('3.14') - converte para float",
+            "str(42) - converte para string",
+            "list('abc') - converte para lista",
+            "tuple([1,2,3]) - converte para tupla",
+            "set([1,1,2,3]) - converte para set (remove duplicatas)"
+          ]
+        }
+      }
+    },
+    "async": {
+      "descricao": "Programação assíncrona",
+      "comandos": {
+        "async_await": {
+          "descricao": "Funções assíncronas",
+          "exemplos": [
+            "async def funcao():\\n    await asyncio.sleep(1)\\n    return 'Pronto'",
+            "import asyncio\\nasyncio.run(funcao()) - executa função async",
+            "async def main():\\n    tasks = [funcao1(), funcao2()]\\n    await asyncio.gather(*tasks) - executa paralelo"
+          ]
+        }
+      }
+    },
+    "type_hints": {
+      "descricao": "Type hints (Python 3.5+)",
+      "comandos": {
+        "typing": {
+          "descricao": "Anotações de tipo",
+          "exemplos": [
+            "def soma(a: int, b: int) -> int:\\n    return a + b",
+            "from typing import List, Dict, Optional",
+            "def processar(itens: List[str]) -> Dict[str, int]:\\n    pass",
+            "def buscar(id: int) -> Optional[str]:\\n    pass - pode retornar None",
+            "nome: str = 'Melody' - anotação de variável"
+          ]
+        }
+      }
+    }
+  },
+  "dicas_gerais": [
+    "Use f-strings para formatação de texto moderna e eficiente",
+    "List comprehensions são mais rápidas que loops tradicionais",
+    "Use with para abrir arquivos - fecha automaticamente",
+    "Prefira métodos de string ao invés de regex para tarefas simples",
+    "Use pathlib ao invés de os.path para caminhos de arquivos",
+    "Dataclasses simplificam criação de classes simples (Python 3.7+)",
+    "Type hints melhoram legibilidade mas são opcionais",
+    "Use enumerate() ao invés de range(len()) para iterar com índice",
+    "Generators economizam memória para grandes conjuntos de dados",
+    "Use dict.get() ao invés de dict[] para evitar KeyError",
+    "O operador walrus := permite atribuição em expressões (Python 3.8+)",
+    "Match/case é mais legível que múltiplos if/elif (Python 3.10+)",
+    "Use // para divisão inteira e / para divisão decimal",
+    "None, False e 0 são valores falsy em Python",
+    "Strings são imutáveis - métodos retornam novas strings"
+  ],
+  "novidades_python_312": [
+    "f-strings podem conter expressões complexas e debugging",
+    "Melhorias de performance significativas no interpretador",
+    "Mensagens de erro mais claras e informativas",
+    "typing.override para marcar métodos que sobrescrevem pai",
+    "Suporte melhorado para match/case patterns",
+    "Performance aprimorada em comprehensions e loops"
+  ]
+}

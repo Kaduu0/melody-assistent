@@ -1,0 +1,158 @@
+{
+  "titulo": "Guia de Comandos Linux para Terminal",
+  "categorias": {
+    "navegacao": {
+      "descricao": "Comandos para navegar pelo sistema de arquivos",
+      "comandos": {
+        "ls": {
+          "descricao": "Lista arquivos e diretórios",
+          "exemplos": [
+            "ls - lista arquivos do diretório atual",
+            "ls -la - lista detalhada incluindo ocultos",
+            "ls -lh - lista com tamanhos legíveis (KB, MB)"
+          ]
+        },
+        "cd": {
+          "descricao": "Muda de diretório",
+          "exemplos": [
+            "cd /home - vai para /home",
+            "cd .. - volta um diretório",
+            "cd ~ - vai para home do usuário",
+            "cd - - volta para o diretório anterior"
+          ]
+        },
+        "pwd": {
+          "descricao": "Mostra o diretório atual",
+          "exemplos": ["pwd - exibe caminho completo do diretório atual"]
+        }
+      }
+    },
+    "arquivos": {
+      "descricao": "Manipulação de arquivos e diretórios",
+      "comandos": {
+        "cp": {
+          "descricao": "Copia arquivos ou diretórios",
+          "exemplos": [
+            "cp arquivo.txt backup.txt - copia arquivo",
+            "cp -r pasta/ backup/ - copia diretório recursivamente"
+          ]
+        },
+        "mv": {
+          "descricao": "Move ou renomeia arquivos",
+          "exemplos": [
+            "mv antigo.txt novo.txt - renomeia arquivo",
+            "mv arquivo.txt /tmp/ - move para /tmp"
+          ]
+        },
+        "rm": {
+          "descricao": "Remove arquivos ou diretórios",
+          "exemplos": [
+            "rm arquivo.txt - remove arquivo",
+            "rm -r pasta/ - remove diretório recursivamente",
+            "rm -f arquivo.txt - força remoção sem confirmação"
+          ],
+          "aviso": "CUIDADO: rm não vai para lixeira, exclusão é permanente!"
+        },
+        "mkdir": {
+          "descricao": "Cria diretórios",
+          "exemplos": [
+            "mkdir nova_pasta - cria diretório",
+            "mkdir -p pai/filho/neto - cria estrutura completa"
+          ]
+        }
+      }
+    },
+    "sistema": {
+      "descricao": "Informações e gerenciamento do sistema",
+      "comandos": {
+        "top": {
+          "descricao": "Mostra processos em execução",
+          "exemplos": ["top - monitor de processos interativo", "htop - versão melhorada (precisa instalar)"]
+        },
+        "df": {
+          "descricao": "Mostra espaço em disco",
+          "exemplos": ["df -h - espaço em disco formato legível"]
+        },
+        "free": {
+          "descricao": "Mostra uso de memória",
+          "exemplos": ["free -h - memória RAM formato legível"]
+        },
+        "uname": {
+          "descricao": "Informações do sistema",
+          "exemplos": ["uname -a - todas as informações do sistema"]
+        }
+      }
+    },
+    "texto": {
+      "descricao": "Manipulação de texto e visualização",
+      "comandos": {
+        "cat": {
+          "descricao": "Mostra conteúdo de arquivo",
+          "exemplos": ["cat arquivo.txt - exibe todo o conteúdo"]
+        },
+        "less": {
+          "descricao": "Visualiza arquivo com paginação",
+          "exemplos": ["less arquivo.txt - navega com setas, q para sair"]
+        },
+        "grep": {
+          "descricao": "Busca texto em arquivos",
+          "exemplos": [
+            "grep 'palavra' arquivo.txt - busca palavra",
+            "grep -r 'texto' pasta/ - busca recursiva em pasta",
+            "grep -i 'palavra' arquivo.txt - busca ignorando maiúsculas"
+          ]
+        },
+        "nano": {
+          "descricao": "Editor de texto simples",
+          "exemplos": ["nano arquivo.txt - abre arquivo no nano", "Ctrl+X para sair, Y para salvar"]
+        }
+      }
+    },
+    "permissoes": {
+      "descricao": "Gerenciamento de permissões",
+      "comandos": {
+        "chmod": {
+          "descricao": "Muda permissões de arquivo",
+          "exemplos": [
+            "chmod +x script.sh - torna executável",
+            "chmod 755 arquivo - rwxr-xr-x",
+            "chmod 644 arquivo - rw-r--r--"
+          ]
+        },
+        "chown": {
+          "descricao": "Muda dono do arquivo",
+          "exemplos": ["sudo chown usuario:grupo arquivo.txt"]
+        }
+      }
+    },
+    "rede": {
+      "descricao": "Comandos de rede",
+      "comandos": {
+        "ping": {
+          "descricao": "Testa conexão",
+          "exemplos": ["ping google.com - testa conexão", "ping -c 4 google.com - envia 4 pacotes apenas"]
+        },
+        "ip": {
+          "descricao": "Configuração de rede",
+          "exemplos": ["ip addr show - mostra IPs", "ip link show - mostra interfaces de rede"]
+        },
+        "curl": {
+          "descricao": "Requisições HTTP",
+          "exemplos": ["curl https://exemplo.com - baixa página", "curl -O url - baixa arquivo"]
+        }
+      }
+    }
+  },
+  "dicas_gerais": [
+    "Use TAB para autocompletar comandos e caminhos",
+    "Use setas para cima e para baixo para navegar no histórico de comandos",
+    "Ctrl+C cancela comando em execução",
+    "Ctrl+L limpa a tela do terminal ou use comando clear",
+    "man seguido do comando mostra manual detalhado do comando",
+    "comando seguido de --help mostra ajuda rápida",
+    "Use sudo antes de comandos que precisam permissão de administrador",
+    "O símbolo ~ representa sua pasta home do usuário",
+    "Asterisco * funciona como coringa para buscar múltiplos arquivos",
+    "Pipe | permite combinar comandos enviando saída de um para entrada de outro"
+  ]
+}
