@@ -28,6 +28,7 @@ class MelodyTerminal:
         self.indice_triggers = self.construir_indice_triggers()
         
         # Palavras-chave técnicas que indicam busca no guia
+        # Não se esqueça de por as palavras chaves quando adicionar seus proprios guias!!!
         self.keywords_tecnicas = {
             # Linux/Terminal
             'comando', 'comandos', 'como', 'criar', 'deletar', 'remover', 'listar',
