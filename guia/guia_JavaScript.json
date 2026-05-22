@@ -1,0 +1,409 @@
+{
+  "titulo": "Guia Completo JavaScript ES2024",
+  "versao": "ES2024",
+  "categorias": {
+    "basico": {
+      "descricao": "Fundamentos da linguagem JavaScript",
+      "comandos": {
+        "console_log": {
+          "descricao": "Exibe informações no console",
+          "exemplos": [
+            "console.log('Olá Mundo')",
+            "console.log(nome)",
+            "console.log(`Valor: ${valor}`)"
+          ]
+        },
+        "variavel": {
+          "descricao": "Declaração de variáveis",
+          "exemplos": [
+            "let nome = 'Carlos' - variável mutável",
+            "const PI = 3.14159 - constante",
+            "var antigo = 'evitar' - sintaxe antiga"
+          ]
+        },
+        "comentario": {
+          "descricao": "Comentários no código",
+          "exemplos": [
+            "// Comentário de uma linha",
+            "/* Comentário de múltiplas linhas */"
+          ]
+        }
+      }
+    },
+
+    "tipos": {
+      "descricao": "Tipos de dados",
+      "comandos": {
+        "primitivos": {
+          "descricao": "Tipos primitivos",
+          "exemplos": [
+            "let texto = 'String'",
+            "let numero = 42",
+            "let decimal = 3.14",
+            "let ativo = true",
+            "let vazio = null",
+            "let indefinido = undefined",
+            "let simbolo = Symbol('id')"
+          ]
+        },
+        "typeof": {
+          "descricao": "Descobre o tipo da variável",
+          "exemplos": [
+            "typeof 'texto'",
+            "typeof 123",
+            "typeof true"
+          ]
+        }
+      }
+    },
+
+    "operadores": {
+      "descricao": "Operadores matemáticos e lógicos",
+      "comandos": {
+        "aritmeticos": {
+          "descricao": "Operações matemáticas",
+          "exemplos": [
+            "5 + 2",
+            "5 - 2",
+            "5 * 2",
+            "5 / 2",
+            "5 % 2",
+            "2 ** 3"
+          ]
+        },
+        "comparacao": {
+          "descricao": "Comparação de valores",
+          "exemplos": [
+            "x == y",
+            "x === y",
+            "x != y",
+            "x !== y",
+            "x > y",
+            "x < y"
+          ]
+        },
+        "logicos": {
+          "descricao": "Operadores lógicos",
+          "exemplos": [
+            "true && false",
+            "true || false",
+            "!true"
+          ]
+        }
+      }
+    },
+
+    "condicionais": {
+      "descricao": "Tomada de decisões",
+      "comandos": {
+        "if": {
+          "descricao": "Estrutura condicional",
+          "exemplos": [
+            "if (idade >= 18) { console.log('Maior de idade'); }",
+            "if (x > 0) {} else {}",
+            "if (x > 0) {} else if (x < 0) {}"
+          ]
+        },
+        "switch": {
+          "descricao": "Múltiplos casos",
+          "exemplos": [
+            "switch(valor) { case 1: break; default: break; }"
+          ]
+        },
+        "ternario": {
+          "descricao": "If simplificado",
+          "exemplos": [
+            "const resultado = idade >= 18 ? 'Adulto' : 'Menor'"
+          ]
+        }
+      }
+    },
+
+    "loops": {
+      "descricao": "Estruturas de repetição",
+      "comandos": {
+        "for": {
+          "descricao": "Loop tradicional",
+          "exemplos": [
+            "for(let i = 0; i < 10; i++) { console.log(i); }"
+          ]
+        },
+        "while": {
+          "descricao": "Loop condicional",
+          "exemplos": [
+            "while(x < 10) { x++; }"
+          ]
+        },
+        "for_of": {
+          "descricao": "Itera valores",
+          "exemplos": [
+            "for(const item of lista) { console.log(item); }"
+          ]
+        },
+        "for_in": {
+          "descricao": "Itera propriedades",
+          "exemplos": [
+            "for(const chave in objeto) { console.log(chave); }"
+          ]
+        }
+      }
+    },
+
+    "funcoes": {
+      "descricao": "Criação e uso de funções",
+      "comandos": {
+        "function": {
+          "descricao": "Função tradicional",
+          "exemplos": [
+            "function soma(a, b) { return a + b; }",
+            "function saudar(nome) { return `Olá ${nome}`; }"
+          ]
+        },
+        "arrow_function": {
+          "descricao": "Funções modernas",
+          "exemplos": [
+            "const soma = (a,b) => a+b",
+            "const dobro = x => x * 2",
+            "const mostrar = () => console.log('Oi')"
+          ]
+        },
+        "parametros_padrao": {
+          "descricao": "Valores padrão",
+          "exemplos": [
+            "function saudar(nome = 'Visitante') {}"
+          ]
+        }
+      }
+    },
+
+    "arrays": {
+      "descricao": "Manipulação de arrays",
+      "comandos": {
+        "array": {
+          "descricao": "Criação e uso de arrays",
+          "exemplos": [
+            "const numeros = [1,2,3]",
+            "numeros.push(4)",
+            "numeros.pop()",
+            "numeros.shift()",
+            "numeros.unshift(0)"
+          ]
+        },
+        "map": {
+          "descricao": "Transforma elementos",
+          "exemplos": [
+            "numeros.map(x => x * 2)"
+          ]
+        },
+        "filter": {
+          "descricao": "Filtra elementos",
+          "exemplos": [
+            "numeros.filter(x => x > 5)"
+          ]
+        },
+        "find": {
+          "descricao": "Encontra elemento",
+          "exemplos": [
+            "usuarios.find(u => u.id === 1)"
+          ]
+        },
+        "reduce": {
+          "descricao": "Reduz array para um valor",
+          "exemplos": [
+            "numeros.reduce((acc,n) => acc+n, 0)"
+          ]
+        }
+      }
+    },
+
+    "objetos": {
+      "descricao": "Objetos JavaScript",
+      "comandos": {
+        "objeto": {
+          "descricao": "Criação de objetos",
+          "exemplos": [
+            "const pessoa = { nome:'Carlos', idade:20 }",
+            "pessoa.nome",
+            "pessoa['idade']"
+          ]
+        },
+        "desestruturacao": {
+          "descricao": "Desestruturação de objetos",
+          "exemplos": [
+            "const {nome, idade} = pessoa"
+          ]
+        },
+        "spread": {
+          "descricao": "Espalhamento de propriedades",
+          "exemplos": [
+            "const copia = {...pessoa}"
+          ]
+        }
+      }
+    },
+
+    "dom": {
+      "descricao": "Manipulação da página HTML",
+      "comandos": {
+        "seletores": {
+          "descricao": "Selecionar elementos",
+          "exemplos": [
+            "document.getElementById('titulo')",
+            "document.querySelector('.classe')",
+            "document.querySelectorAll('p')"
+          ]
+        },
+        "alteracao": {
+          "descricao": "Modificar elementos",
+          "exemplos": [
+            "elemento.textContent = 'Novo texto'",
+            "elemento.innerHTML = '<b>Olá</b>'",
+            "elemento.style.color = 'red'"
+          ]
+        },
+        "classe": {
+          "descricao": "Manipular classes CSS",
+          "exemplos": [
+            "elemento.classList.add('ativo')",
+            "elemento.classList.remove('ativo')",
+            "elemento.classList.toggle('ativo')"
+          ]
+        }
+      }
+    },
+
+    "eventos": {
+      "descricao": "Interações do usuário",
+      "comandos": {
+        "addEventListener": {
+          "descricao": "Escutar eventos",
+          "exemplos": [
+            "botao.addEventListener('click', () => {})",
+            "input.addEventListener('input', evento => {})"
+          ]
+        },
+        "eventos_comuns": {
+          "descricao": "Eventos frequentes",
+          "exemplos": [
+            "click",
+            "submit",
+            "keydown",
+            "keyup",
+            "mouseover",
+            "change"
+          ]
+        }
+      }
+    },
+
+    "json": {
+      "descricao": "Manipulação de JSON",
+      "comandos": {
+        "parse": {
+          "descricao": "Converte texto JSON para objeto",
+          "exemplos": [
+            "JSON.parse(texto)"
+          ]
+        },
+        "stringify": {
+          "descricao": "Converte objeto para JSON",
+          "exemplos": [
+            "JSON.stringify(objeto)"
+          ]
+        }
+      }
+    },
+
+    "async": {
+      "descricao": "Programação assíncrona",
+      "comandos": {
+        "promise": {
+          "descricao": "Promessas",
+          "exemplos": [
+            "new Promise((resolve,reject)=>{})"
+          ]
+        },
+        "async_await": {
+          "descricao": "Código assíncrono moderno",
+          "exemplos": [
+            "async function carregar() { const dados = await fetch(url); }"
+          ]
+        },
+        "fetch": {
+          "descricao": "Requisições HTTP",
+          "exemplos": [
+            "fetch('/api')",
+            "const resposta = await fetch('/api')",
+            "const dados = await resposta.json()"
+          ]
+        }
+      }
+    },
+
+    "classes": {
+      "descricao": "Programação Orientada a Objetos",
+      "comandos": {
+        "class": {
+          "descricao": "Criar classes",
+          "exemplos": [
+            "class Pessoa { constructor(nome){ this.nome = nome; } }",
+            "const p = new Pessoa('Carlos')"
+          ]
+        },
+        "heranca": {
+          "descricao": "Herança entre classes",
+          "exemplos": [
+            "class Aluno extends Pessoa {}",
+            "super(nome)"
+          ]
+        }
+      }
+    },
+
+    "modulos": {
+      "descricao": "Importação de arquivos",
+      "comandos": {
+        "import": {
+          "descricao": "Importar módulos",
+          "exemplos": [
+            "import { soma } from './utils.js'",
+            "import App from './App.js'"
+          ]
+        },
+        "export": {
+          "descricao": "Exportar módulos",
+          "exemplos": [
+            "export function soma() {}",
+            "export default App"
+          ]
+        }
+      }
+    }
+  },
+
+  "dicas_gerais": [
+    "Prefira const sempre que possível",
+    "Use let ao invés de var",
+    "Use === ao invés de ==",
+    "Arrow Functions tornam o código mais compacto",
+    "Prefira addEventListener ao atributo onclick",
+    "Use async/await ao invés de callbacks aninhados",
+    "Map, Filter e Reduce simplificam loops",
+    "Separe código em módulos",
+    "Use template strings com crases (`)",
+    "Evite modificar variáveis globais"
+  ],
+
+  "novidades_javascript_moderno": [
+    "Arrow Functions",
+    "Template Strings",
+    "Desestruturação",
+    "Spread Operator (...)",
+    "Optional Chaining (?.)",
+    "Nullish Coalescing (??)",
+    "Async/Await",
+    "Módulos ES6",
+    "Classes Modernas",
+    "Top Level Await"
+  ]
+}

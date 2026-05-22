@@ -1,0 +1,349 @@
+{
+  "titulo": "Guia Completo CSS 3",
+  "versao": "CSS3",
+  "categorias": {
+    "basico": {
+      "descricao": "Fundamentos da linguagem CSS",
+      "comandos": {
+        "seletor": {
+          "descricao": "Seleciona elementos HTML",
+          "exemplos": [
+            "p { color: red; } - seleciona todas as tags <p>",
+            ".classe { color: blue; } - seleciona classe",
+            "#id { color: green; } - seleciona ID",
+            "* { margin: 0; } - seleciona todos os elementos"
+          ]
+        },
+        "comentario": {
+          "descricao": "Comentários no CSS",
+          "exemplos": [
+            "/* Comentário de uma linha */",
+            "/* Comentário\\n de múltiplas linhas */"
+          ]
+        }
+      }
+    },
+
+    "cores": {
+      "descricao": "Definição de cores",
+      "comandos": {
+        "color": {
+          "descricao": "Cor do texto",
+          "exemplos": [
+            "color: red;",
+            "color: #ff0000;",
+            "color: rgb(255,0,0);",
+            "color: rgba(255,0,0,0.5);",
+            "color: hsl(0,100%,50%);"
+          ]
+        },
+        "background-color": {
+          "descricao": "Cor de fundo",
+          "exemplos": [
+            "background-color: black;",
+            "background-color: #1a1a1a;",
+            "background-color: rgba(0,0,0,0.7);"
+          ]
+        }
+      }
+    },
+
+    "texto": {
+      "descricao": "Formatação de texto",
+      "comandos": {
+        "font-size": {
+          "descricao": "Tamanho da fonte",
+          "exemplos": [
+            "font-size: 16px;",
+            "font-size: 2rem;",
+            "font-size: 120%;"
+          ]
+        },
+        "font-family": {
+          "descricao": "Fonte utilizada",
+          "exemplos": [
+            "font-family: Arial, sans-serif;",
+            "font-family: 'Roboto', sans-serif;"
+          ]
+        },
+        "font-weight": {
+          "descricao": "Peso da fonte",
+          "exemplos": [
+            "font-weight: normal;",
+            "font-weight: bold;",
+            "font-weight: 700;"
+          ]
+        },
+        "text-align": {
+          "descricao": "Alinhamento do texto",
+          "exemplos": [
+            "text-align: left;",
+            "text-align: center;",
+            "text-align: right;",
+            "text-align: justify;"
+          ]
+        },
+        "text-decoration": {
+          "descricao": "Decoração de texto",
+          "exemplos": [
+            "text-decoration: none;",
+            "text-decoration: underline;",
+            "text-decoration: line-through;"
+          ]
+        }
+      }
+    },
+
+    "box_model": {
+      "descricao": "Modelo de caixas",
+      "comandos": {
+        "margin": {
+          "descricao": "Espaço externo",
+          "exemplos": [
+            "margin: 10px;",
+            "margin: 10px 20px;",
+            "margin: auto;"
+          ]
+        },
+        "padding": {
+          "descricao": "Espaço interno",
+          "exemplos": [
+            "padding: 10px;",
+            "padding: 5px 10px;"
+          ]
+        },
+        "border": {
+          "descricao": "Borda do elemento",
+          "exemplos": [
+            "border: 1px solid black;",
+            "border: 3px dashed red;",
+            "border-radius: 10px;"
+          ]
+        }
+      }
+    },
+
+    "dimensoes": {
+      "descricao": "Controle de largura e altura",
+      "comandos": {
+        "width": {
+          "descricao": "Largura",
+          "exemplos": [
+            "width: 300px;",
+            "width: 100%;",
+            "width: 50vw;"
+          ]
+        },
+        "height": {
+          "descricao": "Altura",
+          "exemplos": [
+            "height: 200px;",
+            "height: 100vh;"
+          ]
+        },
+        "max-width": {
+          "descricao": "Largura máxima",
+          "exemplos": [
+            "max-width: 1200px;"
+          ]
+        }
+      }
+    },
+
+    "display": {
+      "descricao": "Comportamento dos elementos",
+      "comandos": {
+        "display": {
+          "descricao": "Tipo de exibição",
+          "exemplos": [
+            "display: block;",
+            "display: inline;",
+            "display: inline-block;",
+            "display: none;",
+            "display: flex;",
+            "display: grid;"
+          ]
+        }
+      }
+    },
+
+    "flexbox": {
+      "descricao": "Layout Flexbox",
+      "comandos": {
+        "flex-container": {
+          "descricao": "Container Flex",
+          "exemplos": [
+            "display: flex;",
+            "flex-direction: row;",
+            "flex-direction: column;",
+            "justify-content: center;",
+            "align-items: center;"
+          ]
+        },
+        "flex-item": {
+          "descricao": "Itens Flex",
+          "exemplos": [
+            "flex: 1;",
+            "flex-grow: 1;",
+            "flex-shrink: 0;",
+            "align-self: center;"
+          ]
+        }
+      }
+    },
+
+    "grid": {
+      "descricao": "Layout CSS Grid",
+      "comandos": {
+        "grid-container": {
+          "descricao": "Container Grid",
+          "exemplos": [
+            "display: grid;",
+            "grid-template-columns: 1fr 1fr;",
+            "grid-template-rows: auto auto;",
+            "gap: 20px;"
+          ]
+        },
+        "grid-item": {
+          "descricao": "Itens do Grid",
+          "exemplos": [
+            "grid-column: 1 / 3;",
+            "grid-row: 2;",
+            "grid-area: header;"
+          ]
+        }
+      }
+    },
+
+    "posicionamento": {
+      "descricao": "Posicionamento dos elementos",
+      "comandos": {
+        "position": {
+          "descricao": "Tipo de posicionamento",
+          "exemplos": [
+            "position: static;",
+            "position: relative;",
+            "position: absolute;",
+            "position: fixed;",
+            "position: sticky;"
+          ]
+        },
+        "coordenadas": {
+          "descricao": "Posições",
+          "exemplos": [
+            "top: 0;",
+            "left: 0;",
+            "right: 10px;",
+            "bottom: 20px;"
+          ]
+        },
+        "z-index": {
+          "descricao": "Ordem de camadas",
+          "exemplos": [
+            "z-index: 10;",
+            "z-index: 999;"
+          ]
+        }
+      }
+    },
+
+    "backgrounds": {
+      "descricao": "Fundos e imagens",
+      "comandos": {
+        "background": {
+          "descricao": "Configuração de fundo",
+          "exemplos": [
+            "background: black;",
+            "background: url('imagem.png');",
+            "background-size: cover;",
+            "background-position: center;",
+            "background-repeat: no-repeat;"
+          ]
+        },
+        "gradient": {
+          "descricao": "Gradientes",
+          "exemplos": [
+            "background: linear-gradient(red, blue);",
+            "background: radial-gradient(circle, red, blue);"
+          ]
+        }
+      }
+    },
+
+    "animacoes": {
+      "descricao": "Transições e animações",
+      "comandos": {
+        "transition": {
+          "descricao": "Transições suaves",
+          "exemplos": [
+            "transition: all 0.3s;",
+            "transition: background-color 0.5s;"
+          ]
+        },
+        "transform": {
+          "descricao": "Transformações",
+          "exemplos": [
+            "transform: scale(1.2);",
+            "transform: rotate(45deg);",
+            "transform: translateX(100px);"
+          ]
+        },
+        "animation": {
+          "descricao": "Animações",
+          "exemplos": [
+            "@keyframes girar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }",
+            "animation: girar 2s infinite linear;"
+          ]
+        }
+      }
+    },
+
+    "responsivo": {
+      "descricao": "Design responsivo",
+      "comandos": {
+        "media-query": {
+          "descricao": "Regras para diferentes telas",
+          "exemplos": [
+            "@media (max-width: 768px) { body { font-size: 14px; } }",
+            "@media (min-width: 1200px) { .container { width: 1200px; } }"
+          ]
+        },
+        "unidades": {
+          "descricao": "Unidades responsivas",
+          "exemplos": [
+            "width: 100%;",
+            "font-size: 2rem;",
+            "width: 50vw;",
+            "height: 100vh;"
+          ]
+        }
+      }
+    }
+  },
+
+  "dicas_gerais": [
+    "Prefira Flexbox para layouts simples",
+    "Use CSS Grid para layouts complexos",
+    "Evite usar !important desnecessariamente",
+    "Use rem ao invés de px para melhor acessibilidade",
+    "Centralize elementos com Flexbox sempre que possível",
+    "Utilize variáveis CSS para cores e tamanhos repetidos",
+    "Mantenha seletores curtos e específicos",
+    "Organize o CSS por componentes",
+    "Use media queries para responsividade",
+    "Minimize repetições utilizando classes reutilizáveis"
+  ],
+
+  "novidades_css_moderno": [
+    "CSS Grid Layout",
+    "Flexbox avançado",
+    "Custom Properties (--variavel)",
+    "Clamp() para tamanhos responsivos",
+    "Aspect-ratio nativo",
+    "Container Queries",
+    "Subgrid",
+    "Scroll Snap",
+    "Backdrop Filter",
+    "CSS Nesting"
+  ]
+}

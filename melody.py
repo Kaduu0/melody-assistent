@@ -18,7 +18,7 @@ class MelodyTerminal:
         self.log_processos = []
         
         # Configurações básicas
-        self.guia_dir = Path("guia")
+        self.guia_dir = Path("guia") #<-- Pasta onde ficam os arquivos guia (JSON e TXT)
         self.memoria_file = Path("memoria.json")
         self.modelo = "melody"
         
@@ -50,6 +50,90 @@ class MelodyTerminal:
             'erro', 'exception', 'error', 'debug', 'método', 'metodo', 'atributo',
             'herança', 'heranca', 'polimorfismo', 'encapsulamento', 'oop',
             'módulo', 'modulo', 'biblioteca', 'package', 'pip', 'instalar'
+            # HTML
+            'html', 'tag', 'tags', 'elemento', 'elementos',
+            'head', 'body', 'title', 'meta', 'link',
+            'header', 'footer', 'nav', 'main', 'section',
+            'article', 'aside', 'div', 'span',
+            'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+            'p', 'br', 'hr',
+            'img', 'imagem', 'imagens',
+            'a', 'href', 'linkagem',
+            'lista', 'listas', 'ul', 'ol', 'li',
+            'tabela', 'table', 'tr', 'td', 'th',
+            'formulario', 'form', 'input', 'textarea',
+            'button', 'select', 'option', 'label',
+            'video', 'audio', 'source',
+            'id', 'class', 'atributo', 'atributos',
+            'semantica', 'semantico', 'responsivo',
+
+            # CSS
+            'css', 'estilo', 'estilos',
+            'cor', 'cores',
+            'background', 'background-color',
+            'font', 'fonte', 'font-size',
+            'font-family', 'font-weight',
+            'text-align', 'text-decoration',
+            'margin', 'padding',
+            'border', 'border-radius',
+            'width', 'height',
+            'display',
+            'flex', 'flexbox',
+            'grid',
+            'position', 'absolute',
+            'relative', 'fixed', 'sticky',
+            'top', 'left', 'right', 'bottom',
+            'z-index',
+            'hover', 'focus',
+            'transition', 'transform',
+            'animation', 'keyframes',
+            'gradient',
+            'media', 'media-query',
+            'responsividade', 'responsivo',
+            'layout', 'container',
+
+            # JavaScript
+            'javascript', 'js',
+            'console', 'console.log',
+            'variavel', 'variáveis',
+            'let', 'const', 'var',
+            'tipo', 'typeof',
+            'operador', 'operadores',
+            'if', 'else', 'switch',
+            'for', 'while',
+            'forof', 'forin',
+            'loop', 'loops',
+            'function', 'funcao', 'função',
+            'arrow', 'arrowfunction',
+            'callback',
+            'array', 'arrays',
+            'objeto', 'objetos',
+            'map', 'filter', 'find',
+            'reduce',
+            'json', 'parse',
+            'stringify',
+            'dom',
+            'document',
+            'queryselector',
+            'queryselectorall',
+            'getelementbyid',
+            'innerhtml',
+            'textcontent',
+            'classlist',
+            'evento', 'eventos',
+            'click', 'submit',
+            'keydown', 'keyup',
+            'promise',
+            'async',
+            'await',
+            'fetch',
+            'api',
+            'class',
+            'constructor',
+            'extends',
+            'import',
+            'export',
+            'modulo', 'modulos'
         }
         
     def log(self, mensagem, tipo="info"):

@@ -1,0 +1,422 @@
+{
+  "titulo": "Guia Completo HTML5",
+  "versao": "HTML5",
+  "categorias": {
+    "basico": {
+      "descricao": "Estrutura básica de um documento HTML",
+      "comandos": {
+        "html": {
+          "descricao": "Elemento raiz do documento HTML",
+          "exemplos": [
+            "<html></html> - documento HTML",
+            "<html lang='pt-BR'></html> - define idioma da página"
+          ]
+        },
+        "head": {
+          "descricao": "Contém metadados da página",
+          "exemplos": [
+            "<head></head>",
+            "<head><title>Meu Site</title></head>"
+          ]
+        },
+        "body": {
+          "descricao": "Contém todo o conteúdo visível",
+          "exemplos": [
+            "<body>Conteúdo da página</body>"
+          ]
+        },
+        "comentario": {
+          "descricao": "Comentários em HTML",
+          "exemplos": [
+            "<!-- Comentário -->",
+            "<!-- Comentário de múltiplas linhas -->"
+          ]
+        }
+      }
+    },
+
+    "metadados": {
+      "descricao": "Informações sobre a página",
+      "comandos": {
+        "title": {
+          "descricao": "Título exibido na aba do navegador",
+          "exemplos": [
+            "<title>Meu Site</title>"
+          ]
+        },
+        "meta": {
+          "descricao": "Metadados da página",
+          "exemplos": [
+            "<meta charset='UTF-8'>",
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+            "<meta name='description' content='Descrição da página'>"
+          ]
+        },
+        "link": {
+          "descricao": "Importa recursos externos",
+          "exemplos": [
+            "<link rel='stylesheet' href='style.css'>",
+            "<link rel='icon' href='favicon.ico'>"
+          ]
+        }
+      }
+    },
+
+    "texto": {
+      "descricao": "Elementos de texto",
+      "comandos": {
+        "h1_h6": {
+          "descricao": "Títulos e subtítulos",
+          "exemplos": [
+            "<h1>Título Principal</h1>",
+            "<h2>Subtítulo</h2>",
+            "<h6>Menor título</h6>"
+          ]
+        },
+        "p": {
+          "descricao": "Parágrafo",
+          "exemplos": [
+            "<p>Texto do parágrafo</p>"
+          ]
+        },
+        "span": {
+          "descricao": "Texto inline",
+          "exemplos": [
+            "<span>Texto</span>"
+          ]
+        },
+        "br": {
+          "descricao": "Quebra de linha",
+          "exemplos": [
+            "Linha 1<br>Linha 2"
+          ]
+        },
+        "hr": {
+          "descricao": "Linha horizontal",
+          "exemplos": [
+            "<hr>"
+          ]
+        }
+      }
+    },
+
+    "formatacao": {
+      "descricao": "Formatação de texto",
+      "comandos": {
+        "strong": {
+          "descricao": "Texto importante (negrito semântico)",
+          "exemplos": [
+            "<strong>Importante</strong>"
+          ]
+        },
+        "b": {
+          "descricao": "Texto em negrito",
+          "exemplos": [
+            "<b>Negrito</b>"
+          ]
+        },
+        "em": {
+          "descricao": "Texto enfatizado",
+          "exemplos": [
+            "<em>Ênfase</em>"
+          ]
+        },
+        "i": {
+          "descricao": "Texto em itálico",
+          "exemplos": [
+            "<i>Itálico</i>"
+          ]
+        },
+        "mark": {
+          "descricao": "Texto destacado",
+          "exemplos": [
+            "<mark>Destaque</mark>"
+          ]
+        },
+        "small": {
+          "descricao": "Texto menor",
+          "exemplos": [
+            "<small>Texto pequeno</small>"
+          ]
+        }
+      }
+    },
+
+    "links": {
+      "descricao": "Hiperlinks",
+      "comandos": {
+        "a": {
+          "descricao": "Cria um link",
+          "exemplos": [
+            "<a href='https://google.com'>Google</a>",
+            "<a href='pagina.html'>Página Interna</a>",
+            "<a href='#secao'>Ir para seção</a>",
+            "<a href='mailto:email@site.com'>Enviar Email</a>"
+          ]
+        }
+      }
+    },
+
+    "imagens": {
+      "descricao": "Exibição de imagens",
+      "comandos": {
+        "img": {
+          "descricao": "Mostra uma imagem",
+          "exemplos": [
+            "<img src='foto.jpg' alt='Descrição'>",
+            "<img src='logo.png' width='200'>"
+          ]
+        },
+        "figure": {
+          "descricao": "Agrupa imagem e legenda",
+          "exemplos": [
+            "<figure><img src='foto.jpg'><figcaption>Legenda</figcaption></figure>"
+          ]
+        }
+      }
+    },
+
+    "listas": {
+      "descricao": "Listas ordenadas e não ordenadas",
+      "comandos": {
+        "ul": {
+          "descricao": "Lista não ordenada",
+          "exemplos": [
+            "<ul><li>Item 1</li><li>Item 2</li></ul>"
+          ]
+        },
+        "ol": {
+          "descricao": "Lista ordenada",
+          "exemplos": [
+            "<ol><li>Primeiro</li><li>Segundo</li></ol>"
+          ]
+        },
+        "li": {
+          "descricao": "Item de lista",
+          "exemplos": [
+            "<li>Meu Item</li>"
+          ]
+        }
+      }
+    },
+
+    "tabelas": {
+      "descricao": "Criação de tabelas",
+      "comandos": {
+        "table": {
+          "descricao": "Tabela principal",
+          "exemplos": [
+            "<table></table>"
+          ]
+        },
+        "tr": {
+          "descricao": "Linha da tabela",
+          "exemplos": [
+            "<tr><td>Valor</td></tr>"
+          ]
+        },
+        "td": {
+          "descricao": "Célula comum",
+          "exemplos": [
+            "<td>Conteúdo</td>"
+          ]
+        },
+        "th": {
+          "descricao": "Cabeçalho da tabela",
+          "exemplos": [
+            "<th>Nome</th>"
+          ]
+        }
+      }
+    },
+
+    "formularios": {
+      "descricao": "Entrada de dados do usuário",
+      "comandos": {
+        "form": {
+          "descricao": "Formulário",
+          "exemplos": [
+            "<form action='enviar.php' method='post'></form>"
+          ]
+        },
+        "input": {
+          "descricao": "Campo de entrada",
+          "exemplos": [
+            "<input type='text'>",
+            "<input type='email'>",
+            "<input type='password'>",
+            "<input type='number'>",
+            "<input type='checkbox'>",
+            "<input type='radio'>"
+          ]
+        },
+        "textarea": {
+          "descricao": "Campo de texto longo",
+          "exemplos": [
+            "<textarea></textarea>"
+          ]
+        },
+        "button": {
+          "descricao": "Botão",
+          "exemplos": [
+            "<button>Clique Aqui</button>",
+            "<button type='submit'>Enviar</button>"
+          ]
+        },
+        "select": {
+          "descricao": "Lista suspensa",
+          "exemplos": [
+            "<select><option>Opção 1</option></select>"
+          ]
+        },
+        "label": {
+          "descricao": "Rótulo de formulário",
+          "exemplos": [
+            "<label for='nome'>Nome:</label>"
+          ]
+        }
+      }
+    },
+
+    "containers": {
+      "descricao": "Agrupamento de elementos",
+      "comandos": {
+        "div": {
+          "descricao": "Container genérico",
+          "exemplos": [
+            "<div>Conteúdo</div>"
+          ]
+        },
+        "section": {
+          "descricao": "Seção temática",
+          "exemplos": [
+            "<section>Conteúdo da seção</section>"
+          ]
+        },
+        "article": {
+          "descricao": "Conteúdo independente",
+          "exemplos": [
+            "<article>Postagem do blog</article>"
+          ]
+        },
+        "aside": {
+          "descricao": "Conteúdo complementar",
+          "exemplos": [
+            "<aside>Barra lateral</aside>"
+          ]
+        }
+      }
+    },
+
+    "estrutura_semantica": {
+      "descricao": "Tags semânticas modernas",
+      "comandos": {
+        "header": {
+          "descricao": "Cabeçalho da página",
+          "exemplos": [
+            "<header>Cabeçalho</header>"
+          ]
+        },
+        "nav": {
+          "descricao": "Menu de navegação",
+          "exemplos": [
+            "<nav><a href='#'>Início</a></nav>"
+          ]
+        },
+        "main": {
+          "descricao": "Conteúdo principal",
+          "exemplos": [
+            "<main>Conteúdo Principal</main>"
+          ]
+        },
+        "footer": {
+          "descricao": "Rodapé",
+          "exemplos": [
+            "<footer>Rodapé do site</footer>"
+          ]
+        }
+      }
+    },
+
+    "multimidia": {
+      "descricao": "Áudio e vídeo",
+      "comandos": {
+        "audio": {
+          "descricao": "Reproduz áudio",
+          "exemplos": [
+            "<audio controls src='musica.mp3'></audio>"
+          ]
+        },
+        "video": {
+          "descricao": "Reproduz vídeo",
+          "exemplos": [
+            "<video controls src='video.mp4'></video>",
+            "<video controls width='640'></video>"
+          ]
+        },
+        "source": {
+          "descricao": "Fonte alternativa de mídia",
+          "exemplos": [
+            "<source src='video.mp4' type='video/mp4'>"
+          ]
+        }
+      }
+    },
+
+    "atributos": {
+      "descricao": "Atributos globais",
+      "comandos": {
+        "id": {
+          "descricao": "Identificador único",
+          "exemplos": [
+            "<div id='menu'></div>"
+          ]
+        },
+        "class": {
+          "descricao": "Classe CSS",
+          "exemplos": [
+            "<div class='container'></div>"
+          ]
+        },
+        "style": {
+          "descricao": "CSS inline",
+          "exemplos": [
+            "<p style='color:red;'>Texto</p>"
+          ]
+        },
+        "title": {
+          "descricao": "Texto exibido ao passar o mouse",
+          "exemplos": [
+            "<button title='Clique aqui'>Botão</button>"
+          ]
+        }
+      }
+    }
+  },
+
+  "dicas_gerais": [
+    "Use HTML semântico sempre que possível",
+    "Todo documento deve possuir DOCTYPE",
+    "Defina o idioma usando lang='pt-BR'",
+    "Sempre use atributo alt em imagens",
+    "Utilize labels em formulários",
+    "Evite excesso de divs desnecessárias",
+    "Organize o código com indentação",
+    "Use header, main e footer para estruturar páginas",
+    "Separe HTML, CSS e JavaScript em arquivos próprios",
+    "Prefira elementos semânticos modernos"
+  ],
+
+  "novidades_html5": [
+    "Tags semânticas como header, nav e footer",
+    "Elemento video nativo",
+    "Elemento audio nativo",
+    "Canvas para gráficos e jogos",
+    "Local Storage",
+    "Session Storage",
+    "Novos tipos de input",
+    "Suporte aprimorado para APIs web",
+    "Geolocalização",
+    "Drag and Drop nativo"
+  ]
+}
